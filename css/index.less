@@ -35,6 +35,35 @@ input#abrir-cerrar {
   top: -9999px;
 }
 
+.imgusuario{
+  background: transparent
+    url("/icons/user2.png")
+    no-repeat center center;
+    position: relative;
+  margin: auto;
+  top: 10px;
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.userinfo{
+  width: auto;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userinfo > li{
+  text-align: center;
+  font-family: proxima nova
+  border: 5px solid transparent;
+}
+
 
 label[for="abrir-cerrar"] {
   cursor:pointer;
@@ -81,7 +110,7 @@ input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #00324b;
+  background-color: rgba(8, 120, 175, 0.6);
   overflow-x: hidden;
   transition: 0.4s;
   padding: 1rem 0;
@@ -124,8 +153,8 @@ input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
 }
 
 .sidebar a:hover{
-  color:#fff;
-  background-color: #f90;
+  color: #fff;
+  background-color: rgba(41, 63, 70, 0.7);
 }
 
 #contenido {
