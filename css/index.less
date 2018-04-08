@@ -33,6 +33,77 @@ body{
   border: .5px transparent;
   height: 40px;
 }
+
+/*Colocación de lista para los enlaces*/
+ul {
+  list-style:none;
+  text-align: right;
+  margin: 0;
+  padding-right: 30px;
+}/*Fin de la colocación de la lista para los enlaces*/
+
+/*Espaciado y colocación botones individuales*/
+.btnsocial ul li {
+  display: inline-block;
+  margin-left: 3px;
+  margin-top: 2px;
+}/*Fin espaciado y colocación botones individuales*/
+
+/*Comportamiento y apariencia de los botones*/
+.btnsocial a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  border-radius: 6px;
+  width: 35px;
+  height: 30px;
+  text-align: center;
+  transform: translate(0, 0);
+  transition: all 0.2s ease;
+  text-shadow: none;
+  color: transparent;
+}
+
+.btnsocial a:active {
+  transform: translate(0, 3px);
+}/*Fin comportamiento y apariencia de los botones*/
+
+
+/*-----Botón de twitter-----*/
+
+a.twitter {
+  box-shadow: 0px 6px 0px #2695bc;
+}/*Sombra sin pulsar*/
+
+a.twitter {
+  background: #2ca9e1
+    url("/icons/twit-icon.png")
+    no-repeat center center;
+}/*Icono twitter*/
+
+a.twitter:active {
+  box-shadow: 0px 2px 0px #2695bc;
+}/*Sombra desplazamiento botón pulsado*/
+
+/*-----Fin botón de twitter-----*/
+
+
+/*-----Botón de facebook-----*/
+a.facebook {
+  box-shadow: 0px 6px 0px #293f63;
+}/*Sombra sin pulsar*/
+
+a.facebook {
+  background: #3b5997
+    url("/icons/face-icon.png")
+    no-repeat center center;
+}/*Icono facebook*/
+
+a.facebook:active {
+  box-shadow: 0px 2px 0px #293f63;
+}/*Sombra desplazamiento botón pulsado*/
+
+/*-----Fin botón de facebook-----*/
 /*----------- Fin botonera derecha -----------*/
 /*---------------------- Fin barra superior ----------------------*/
 
