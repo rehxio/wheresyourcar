@@ -1,6 +1,7 @@
 //out: index.css, compress: true, autoprefixer: true
 
 body{
+  background-image: linear-gradient(to right, rgb(168, 185, 219), rgb(23, 34, 138));
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -8,7 +9,7 @@ body{
 
 /*---------------------- Barra superior ----------------------*/
 .topborder{
-  background: rgba(37, 161, 194, 0.1);
+  background: rgb(41, 63, 70);
   width: 100%;
   height: 40px;
   display: flex;
@@ -109,20 +110,70 @@ a.facebook:active {
 
 /*--------------- Barra de botones de la aplicación --------------*/
 .botonmbar{
-  background: rgba(34, 168, 226, 0.5);
+  background: transparent;
   width: 100%;
   height: 65px;
   border: .5px transparent;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.botton{}
+.botton{
+  background: transparent;
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.parkbutton{
+  color: rgba(41, 63, 70, 0.7);
+  font-family: proxima nova;
+  font-weight: 100;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: inherit;
+  border: 2px solid rgba(41, 63, 70, 0.7);
+  border-radius: 50px;
+  padding: 1px 30px;
+  transition-duration: 200ms;
+}
+
+.parkbutton:hover{
+  background-color: rgba(41, 63, 70, 0.7);
+  color: rgba(102, 143, 205, 0.85);
+}
+
+.movedbotton{
+  color: rgba(41, 63, 70, 0.7);
+  font-family: proxima nova;
+  font-weight: 100;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: inherit;
+  border: 2px solid rgba(41, 63, 70, 0.7);
+  border-radius: 50px;
+  padding: 1px 30px;
+  transition-duration: 200ms;
+}
+
+.movedbotton:hover{
+  background-color: rgba(41, 63, 70, 0.7);
+  color: rgba(102, 143, 205, 0.85);
+}
+
+
 .bottona{}
 .bottonb{}
 /*--------- Fin de la barra de botones de la aplicación ---------*/
 
 /*----------------------------- Mapa ----------------------------*/
 .map{
-  background: rgba(16, 42, 222, 0.1) url("/img/canaryislands-maps.png") no-repeat center center;
+  background: transparent url("/img/canaryislands-maps.png") no-repeat center center;
   width: 100%;
   height: 450px;
   border: .5px rgba(7, 181, 237, 0.2);
@@ -132,7 +183,7 @@ a.facebook:active {
 
 /*------------ Cajas de información para el usuario -------------*/
 .section{
-  background: rgba(16, 42, 222, 0.1);
+  background: transparent;
   width: 100%;
   height: 250px;
   border: .5px transparent;
@@ -144,11 +195,12 @@ a.facebook:active {
 }
 
 .box{
-  background: rgba(7, 181, 237, 0.2);
+  background: rgba(41, 63, 70, 0.7);
   width: 45%;
   height: 95%;
   border: .5px transparent;
   border-radius: 40px;
+  box-shadow: 5px 5px 20px grey;
 }
 
 .boxa{
