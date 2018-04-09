@@ -1,7 +1,7 @@
 //out: index.css, compress: true, autoprefixer: true
 
 body{
-  background-image: linear-gradient(to right, rgb(168, 185, 219), rgb(23, 34, 138));
+  background-image: linear-gradient(to right, rgb(168, 185, 219), rgb(49,69,255));
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -9,9 +9,10 @@ body{
   font-size:100%;
   margin:0;
   padding:0;
+  overflow: hidden;
 }
 
-header {
+header{
   background:#333;
   color:#eee;
   width:100%;
@@ -30,13 +31,13 @@ header {
 }
 
 /*-------------- Menú colapsable --------------*/
-input#abrir-cerrar {
+input#abrir-cerrar{
   visibility:hidden;
   position: absolute;
   top: -9999px;
 }
 
-<<<<<<< HEAD
+/*-------Usuario------*/
 .imgusuario{
   background: transparent
     url("/icons/user2.png")
@@ -62,20 +63,32 @@ input#abrir-cerrar {
 
 .userinfo > li{
   text-align: center;
-  font-family: proxima nova
+  font-family: proxima,nova;
   border: 5px solid transparent;
 }
+/*------ Fin usuario --------*/
+.usuabrir, .usucerrar{
+  background: transparent
+    url("/icons/user2w.png")
+    no-repeat center center;
+  background-size: 100%;
+  position: relative;
+  margin: auto;
+  left: 10px;
+  top: -7px;
+  width: 20px;
+  height: 20px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
 
-
-=======
->>>>>>> 698453e9e73b0ff8320e99ade5b2c00b48537a63
-label[for="abrir-cerrar"] {
+label[for="abrir-cerrar"]{
   cursor:pointer;
   padding: 1rem;
   background-color:#333;
   color:#fff;
   display:inline-block;
-  width:80%;
+  width:5%;
 }
 
 .cerrar {
