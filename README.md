@@ -1,4 +1,8 @@
 # Where's Your Car?
-Aplicación web para guardar la ubicación del último aparcamiento, que se pueda indicar desde el móvil en el momento de aparcar, o desde un pc si se ha olvidado hacerlo en el momento de haber aparcado. Si se hace desde el móvil se puede usar la geolocalización y habría que distinguir entre dispositivo móvil y pc para que use en los dispositivos móviles la geolocalización y en pc que de la opción para marcar manualmente la ubicación donde se ha aparcado.
+Es una aplicación web para recordar donde se ha aparcado el vehículo, pueden haber varios vehículos y van vinculados a un usuario y contraseña con los que se ha iniciado previamente.
 
-Debería tener 2 botones, un mapa y un histórico, los botones serían “Aparcado” y “Saliendo”, en el histórico se mostraría un listado de los últimos 10 aparcamientos, aunque se podría ver más extenso, mostrando las ubicaciones en el mapa, hora a la que se aparcó y tiempo que ha estado aparcado.
+Se pueda indicar desde el móvil en el momento de aparcar o desde un pc si se ha olvidado hacerlo en el momento de haber aparcado. Si se hace desde el móvil se puede usar la geolocalización y en pc se puede marcar manualmente en el mapa y marcar como que se ha aparcado en ese sitio concreto.
+
+Tendrá 2 botones, los botones serían “Aparcado” y “En marcha”, un mapa donde se verá la ubicación del último aparcamiento y un histórico, en el que se mostraría un listado de los últimos 10 aparcamientos, aunque se podría ver más extenso, mostrando las ubicaciones en el mapa, hora a la que se aparcó y tiempo que ha estado aparcado.
+
+La aplicación también permitirá buscar una calle donde se quiere ir y sugiere ubicaciones donde hay más facilidad de encontrar aparcamiento contrastando datos estadisticos proporcionados por otros usuarios.
