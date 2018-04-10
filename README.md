@@ -8,13 +8,10 @@ Tendrá 2 botones, los botones serían “Aparcado” y “En marcha”, un mapa
 La aplicación también permitirá buscar una calle donde se quiere ir y sugiere ubicaciones donde hay más facilidad de encontrar aparcamiento contrastando datos estadisticos proporcionados por otros usuarios.
 
 | Michal | Fabián |
-|--------|--------|
 |[Codepen](https://codepen.io/rutuser/)|[Codepen](https://codepen.io/rehxio/)|
-|--------|--------|
 |[Github](https://github.com/rutuser)|[Github](https://github.com/rehxio)|
-|--------|--------|
 |--------|[LinkedIn](https://www.linkedin.com/in/fabi%C3%A1n-r-b6650678/)|
-|--------|--------|
+
 
 En el proyecto se utilizarán las siguientes herramientas:
 - IDE: Atom o Visual Studio.
