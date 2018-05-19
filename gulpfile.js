@@ -1,13 +1,6 @@
 let gulp = require('gulp');
-//let colors = require('ansi-colors');
-
-//gulp.task('default', () => {
-//   console.log('Tarea por ' + colors.green('defecto.'));
-//});
-
 let newer = require('gulp-newer');
 let less = require('gulp-less');
-
 let postcss = require('gulp-postcss');
 let cssnext = require('postcss-cssnext');
 let cleancss = require('gulp-clean-css');
@@ -18,11 +11,11 @@ let postcssOptions = [cssnext];
 // LESS/CSS
 gulp.task('css', () => {
    return gulp.src('src/css/*.less')
-      //.pipe(newer({
-      //   dest:'dist/css',
-      //   ext:'.css',
-      //   extra:'src/css/includes/**/*.less',
-      //}))
+      .pipe(newer({
+         dest:'dist/css',
+         ext:'.css',
+         extra:'src/css/includes/**/*.less',
+      }))
       .pipe(less())
       .pipe(postcss(postcssOptions))
       .pipe(gulp.dest('dist/css'))
@@ -86,7 +79,7 @@ let imageminOptions = [
 
 gulp.task('images', () => {
    return gulp.src(['./src/img/**/*.{png,gif,jpg,svg}'])
-      //.pipe(newer('src/img'))
+      .pipe(newer('src/img'))
       .pipe(imagemin(imageminOptions))
       .on('error', err => {
          console.log('[ERROR] ', + err.message);
