@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <meta charset="utf-8">
-    <title>Where's Your Car?</title>
+    <title>Check your car position</title>
   </head>
   <body>
     <div class="topborder">
@@ -15,11 +15,11 @@
           <!--Usuario-->
           <div class="imgusuario"></div>
           <div class="userinfo">
-          <li><a href="#">Nombre usuario</a></li>
-          <li><a href="#">Vehículos</a></li>
-          <li><a href="#">Situcion actual</a></li>
-          <li><a href="#">Lugares destacados</a></li>
-          <li><a href="#">Info</a></li>
+          <li><a href="#" onclick="botonUsuario()" id="botonUsuario">Nombre usuario</a></li>
+          <li><a href="#" onclick="botonVehiculos()" id="botonVehiculos">Vehículos</a></li>
+          <li><a href="#" onclick="botonSituacion()" id="botonSituacion">Situcion actual</a></li>
+          <li><a href="#" onclick="botonLugares()" id="botonLugares">Lugares destacados</a></li>
+          <li><a href="#" onclick="botonInfo()" id="botonInfo">Info</a></li>
           <!--Fin usuario-->
           </div>
         </ul>
@@ -35,18 +35,22 @@
       <!--Fin botones sociales-->
     </div>
     <div class="botonmbar">
-      <div class="botton bottona">
+      <div class="botton bottona" onclick="botonParked()">
         <a href="#" class="parkbutton">Parked!</a>
       </div>
       <div class="botton bottonb">
         <a href="#" class="movedbotton">Moved</a>
       </div>
     </div>
-    <div class="map">
+    <div id="map">
     </div>
     <div class="section">
       <div class="box boxa"></div>
       <div class="box boxb"></div>
     </div>
+    <script src="js/index.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH7NKFsK_MXS6urT3l8fYuYB9EDHPcHXU&callback=initMap">
+    </script>
   </body>
 </html>
