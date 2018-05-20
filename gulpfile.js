@@ -60,6 +60,7 @@ gulp.task('js', () => {
 let imagemin = require('gulp-imagemin');
 let mozjpeg = require('imagemin-mozjpeg');
 let jpegrecompress = require('imagemin-jpeg-recompress');
+
 let imageminOptions = [
    imagemin.gifsicle({ interlaced: true }),
    imagemin.jpegtran({ progressive: true }),

@@ -32,3 +32,4 @@ composer.*
 node_modules/
 vendor/
 config/
+semantic/
