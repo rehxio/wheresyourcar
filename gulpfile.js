@@ -1,5 +1,7 @@
 let gulp = require('gulp');
 let newer = require('gulp-newer');
+
+// ------------- LESS/CSS -------------
 let less = require('gulp-less');
 let postcss = require('gulp-postcss');
 let cssnext = require('postcss-cssnext');
@@ -8,7 +10,6 @@ let rename = require('gulp-rename');
 
 let postcssOptions = [cssnext];
 
-// LESS/CSS
 gulp.task('css', () => {
    return gulp.src('src/css/*.less')
       .pipe(newer({
@@ -24,12 +25,12 @@ gulp.task('css', () => {
       .pipe(gulp.dest('dist/css'))
 });
 
+// ------------- JS ES6 -------------
 //let uglify = require('gulp-uglify');
 let rollup = require('rollup');
 let rollupBabel = require('rollup-plugin-babel');
 let rollupUglify = require('rollup-plugin-uglify');
 
-// JS ES6
 gulp.task('js', () => {
    //return gulp.src(['./src/js/*.es6'])
       //.pipe(newer({
@@ -55,8 +56,7 @@ gulp.task('js', () => {
    });
 });
 
-
-// Optimization IMG
+// ------------- Optimization IMG -------------
 let imagemin = require('gulp-imagemin');
 let mozjpeg = require('imagemin-mozjpeg');
 let jpegrecompress = require('imagemin-jpeg-recompress');
@@ -88,4 +88,14 @@ gulp.task('images', () => {
       .pipe(gulp.dest('dist/img'));
 });
 
+// ------------- Gulp Watch -------------
+let watch = require('gulp-watch');
+
+gulp.task('watch', ['css','js','images'], () => {
+   gulp.watch('./src/**/*.*', () => {
+		gulp.run('css');
+		gulp.run('js');
+		gulp.run('images');
+   });
+});
 
