@@ -55,7 +55,7 @@ function initMap() {
 
   //Funcion que verifica si se ha podido efectuar la extraccion de localizacion
   function getFail(){
-    if(coordenates.lat == undefined){
+    if(coordenates.lat == undefined || coordenates.lng == undefined ){
       alert('Unabel to check your position');
     }
   }
