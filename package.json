@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rehxio/wheresyourcar.me/issues"
   },
-  "homepage": "https://github.com/rehxio/wheresyourcar.me#readme"
+  "homepage": "https://github.com/rehxio/wheresyourcar.me#readme",
+  "devDependencies": {
+    "gulp-watch": "^5.0.0"
+  }
 }
