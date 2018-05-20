@@ -27,7 +27,8 @@
 ehthumbs.db
 Thumbs.db
 composer.*
-package*
+package.json
+package-lock.json
 
 #Directorios
 node_modules/
