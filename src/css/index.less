@@ -1,4 +1,4 @@
-//out: index.css, compress: true, autoprefixer: true
+//out: ../dist/css/index.css
 
 body{
   background: white;
@@ -218,7 +218,7 @@ div.btnsocial ul {
 }/*Fin espaciado y colocación botones individuales*/
 
 /*Comportamiento y apariencia de los botones*/
-.btnsocial a {
+.btnsocial i {
   color: #ffffff;
   text-decoration: none;
   display: block;
@@ -229,22 +229,21 @@ div.btnsocial ul {
   transform: translate(0, 0);
   transition: all 0.2s ease;
   text-shadow: none;
-  color: transparent;
 }
 
-.btnsocial a:active {
+.btnsocial i:active {
   transform: translate(0, 3px);
 }/*Fin comportamiento y apariencia de los botones*/
 
 
 /*-----Botón de twitter-----*/
 
-a.twitter {
+i.twitter {
   background: #2ca9e1;
   box-shadow: 0px 6px 0px #2695bc;
 }/*Sombra sin pulsar*/
 
-a.twitter:active {
+i.twitter:active {
   box-shadow: 0px 2px 0px #2695bc;
 }/*Sombra desplazamiento botón pulsado*/
 
@@ -252,12 +251,12 @@ a.twitter:active {
 
 
 /*-----Botón de facebook-----*/
-a.facebook {
+i.facebook {
   background: #3b5997;
   box-shadow: 0px 6px 0px #293f63;
 }/*Sombra sin pulsar*/
 
-a.facebook:active {
+i.facebook:active {
   box-shadow: 0px 2px 0px #293f63;
 }/*Sombra desplazamiento botón pulsado*/
 
@@ -329,8 +328,13 @@ a.facebook:active {
 /*--------- Fin de la barra de botones de la aplicación ---------*/
 
 /*----------------------------- Mapa ----------------------------*/
+<<<<<<< HEAD
 #map{
   background: transparent url("https://rehxio.github.io/wheresyourcar/img/canaryislands-maps.png") no-repeat center center;
+=======
+.map{
+  background: transparent url("http://static.wheresyourcar/img/canaryislands-maps.png") no-repeat center center;
+>>>>>>> 51c484a60338510cfddb3c98592c770a9a7fa9a0
   width: 100%;
   height: 300px;
   border: .5px rgba(7, 181, 237, 0.2);
