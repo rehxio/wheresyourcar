@@ -63,8 +63,8 @@ function initMap() {
 
   getLocation();
 
-  addMarker(coords1); //coordenadas de prueba globales
-  addMarker(coords2); //coordenadas de prueba locales
+  //addMarker(coords1); //coordenadas de prueba globales
+  //addMarker(coords2); //coordenadas de prueba locales
 
   //Funcion de crear pinpollos
   function addMarker(coordenadas){
