@@ -1,63 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-  	<head>
-		<link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
-    	<meta charset="utf-8">
-    	<title>Where's Your Car?</title>
-  	</head>
-  	<body>
-		 </div>
-      	<div class="ui styled fluid accordion">
-				<div class="title">
-					<i class="dropdown icon"></i>Menú
+
+<head>
+	<meta charset="utf-8">
+	<title>Where's Your Car?</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+	<link rel="stylesheet" href="https://static.whereisyourcar.me/css/semantic.css">
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	 crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
+
+</head>
+
+<body>
+	<div class="ui top attached menu inverted">
+		<a class="item buttonmenu">
+			<i class="sidebar icon"></i>
+		</a>
+		<a class="item right">
+			<i class="large twitter icon blue"></i>
+		</a>
+	</div>
+	<div class="ui bottom attached segment">
+		<div class="ui inverted labeled icon left inline vertical sidebar menu">
+			<a class="item">
+				<i class="user icon"></i> Usuario
+			</a>
+			<a class="item">
+				<i class="car icon"></i> Vehículos
+			</a>
+			<a class="item">
+				<i class="location arrow icon"></i> Situación actual
+			</a>
+			<a class="item">
+				<i class="calendar icon"></i> Lugares destacados
+			</a>
+		</div>
+		<div class="pusher">
+			<div class="ui grid">
+				<div class="one column row">
+					<div class="column">
+						<div id="buttonbar" class="ui center aligned segment">
+							<div class="big ui red button">Parked</div>
+							<div class="big ui green button">Move</div>
+							<div class="big ui blue button">Where park?</div>
+						</div>
+					</div>
 				</div>
-				<div class="content">
-					<p class="transition hidden"><a href="#">Nombre usuario</a></p>
+				<div class="one column only row">
+					<div class="column">
+						<div id="map" class="ui segment">
+						</div>
+					</div>
+				</div>
+				<div class="two column only row">
+					<div class="column">
+						<div id="boxleft" class="ui segment">
+							Information
+						</div>
+					</div>
+					<div class="column">
+						<div id="boxright" class="ui segment">
+							Information
+						</div>
+					</div>
 				</div>
 			</div>
-			<!--
-        		<ul class="menu">
-          		<!Usuario
-          		<i class="fas fa-user imgusuario"></i>
-          		<div class="userinfo">
-          			<li><a href="#">Nombre usuario</a></li>
-          			<li><a href="#">Vehículos</a></li>
-          			<li><a href="#">Situcion actual</a></li>
-          			<li><a href="#">Lugares destacados</a></li>
-          			<li><a href="#">Info</a></li>
-          		<!Fin usuario
-         		</div>
-				  </ul>
-				-->
-				<div>
-      <div class="leftborder"></div>
-      <!--Botones sociales-->
-      <div class="rightborder btnsocial">
-        	<ul>
-          	<li><a href="#"><i class="fab fa-twitter twitter"></i></a></li>
-          	<li><a href="#"><i class="fab fa-facebook-f facebook"></i></a></li>
-        	</ul>
-      </div>
-      <!--Fin botones sociales-->
-   </div>
-   <div class="botonmbar">
-      <div class="botton bottona">
-        	<a href="#" class="parkbutton">Parked!</a>
-      </div>
-      <div class="botton bottonb">
-        	<a href="#" class="movedbotton">Moved</a>
-      </div>
-   </div>
-   <div class="map"></div>
-   <div class="section">
-   	<div class="box boxa"></div>
-      <div class="box boxb"></div>
+		</div>
 	</div>
-	<script 
-		src="https://code.jquery.com/jquery-3.1.1.min.js" 
-		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
-		crossorigin="anonymous">
+
+
+	<script src="https://static.whereisyourcar.me/js/semantic.js"></script>
+	<script src="https://static.whereisyourcar.me/js/index.js"></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH7NKFsK_MXS6urT3l8fYuYB9EDHPcHXU&callback=initMap">
 	</script>
-	<script src="semantic/dist/semantic.min.js"></script>
-  	</body>
+</body>
+
 </html>
