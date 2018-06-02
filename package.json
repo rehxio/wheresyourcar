@@ -4,11 +4,12 @@
 	"description": "Es una aplicación web para recordar donde se ha aparcado el vehículo, pueden haber varios vehículos y van vinculados a un usuario y contraseña con los que se ha iniciado previamente.",
 	"main": "index.js",
 	"scripts": {
-		"build": "webpack",
-		"start": "node dist/bundle.js",
+		"build": "webpack --config ./config/webpack/webpack.config.js",
+		"build-front": "node frontend/dist/static/js/bundle.js",
+		"build-back": "node backend/dist/api/api.js",
 		"dev": "webpack-dev-server --mode development",
 		"test": "jest --watch",
-		"lint": "tslint -p ./tsconfig.json"
+		"lint": "tslint -p config/ts/tsconfig.json"
 	},
 	"repository": {
 		"type": "git",
