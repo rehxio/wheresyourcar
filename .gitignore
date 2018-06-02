@@ -30,4 +30,5 @@ composer.*
 
 #Directorios
 node_modules/
+config/
 reports/
