@@ -30,6 +30,5 @@ composer.*
 
 #Directorios
 node_modules/
-vendor/
 config/
-semantic/
+reports/
