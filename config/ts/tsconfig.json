@@ -11,5 +11,8 @@
 		"dist",
 		"build",
 		"node_modules"
+	],
+	"include": [
+		"../../frontend/src/**/*"
 	]
 }
