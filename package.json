@@ -7,7 +7,7 @@
 		"build": "webpack --config ./config/webpack/webpack.config.js",
 		"build-front": "node frontend/dist/static/js/bundle.js",
 		"build-back": "node backend/dist/api/api.js",
-		"dev": "webpack-dev-server --mode development",
+		"dev": "webpack-dev-server ./frontend/src/tsx/index.tsx --mode development --config ./config/webpack/webpack.config.js",
 		"test": "jest --watch",
 		"ts-dev": "nodemon --watch ‘**/*.ts’ --exec ts-node backend/src/server.ts",
 		"lint": "tslint -p config/ts/tsconfig.json"
@@ -55,7 +55,7 @@
 		"style-loader": "^0.21.0",
 		"ts-node": "^6.0.4",
 		"ts-jest": "^22.4.6",
-		"ts-loader": "^4.3.0",
+		"ts-loader": "^4.3.1",
 		"tslint": "^5.10.0",
 		"tslint-config-prettier": "^1.13.0",
 		"tslint-react": "^3.6.0",
@@ -66,7 +66,7 @@
 	},
 	"dependencies": {
 		"express": "^4.16.3",
-		"@material-ui/core": "^1.1.0",
+		"@material-ui/core": "^1.2.0",
 		"@material-ui/icons": "^1.1.0",
 		"prop-types": "^15.6.1",
 		"react": "^16.4.0",
