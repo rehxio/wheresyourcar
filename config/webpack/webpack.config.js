@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
 	mode: 'production',
-	entry: '/frontend/src/tsx/index.tsx',
+	entry: '../../frontend/src/tsx/index.tsx',
 	resolve: {
 		extensions: ['.tsx', '.ts', '.js']
 	},
